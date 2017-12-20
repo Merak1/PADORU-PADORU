@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persona>
+	<nombres>Luis Manuel</nombres>
+	<apellidos>Torres</apellidos>
+	<edad>25</edad>
+	<correo-electronico>luistorres@email.com</correo-electronico>
+</persona>

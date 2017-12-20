@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Benis</title>
+</head>
+<body>
+	<div> Mi primer elelemtno div</div>
+	<div> Mi segundo elemento div</div>
+	<div> Mi tercer elemento div</div>
+	<div> Mi cuarto elemento div</div>
+
+	<button onclick="cambiarColor()">?</button>
+</body>
+<script type="text/javascript">
+	
+	function cambiarColor(){
+		var listaNodos = document.getElementsByTagName('div');
+
+		for (var i =0; i < listaNodos.length; i++){
+
+			listaNodos[i].style.backgroundColor ="green";
+		}
+	}
+</script>
+</html> 

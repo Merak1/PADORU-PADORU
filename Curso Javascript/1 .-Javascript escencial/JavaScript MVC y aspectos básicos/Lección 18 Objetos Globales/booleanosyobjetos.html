@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Objetos globales y booleanos </title>
+</head>
+<body>
+	<h1>Global Object</h1>
+
+	<p id="g1"></p>
+	<p id="g2"></p>
+
+	<h1>Métodos</h1>
+
+
+	<p id="g3"></p>
+	<p id="g4"></p>
+	<p id="g5"></p>
+	<p id="g6"></p>
+	<p id="g7"></p>
+	<p id="g8"></p>
+	<p id="g9"></p>
+	<p id="g10"></p>
+</body>
+<script>
+	var a;  //Undefined
+	var b= a+2;// NaN
+
+	//MÉTODOS
+
+	//parseInt convierte un string en un numero entero
+	var c = parseInt("2.35");//2
+	var d = parseInt("1 La pluma estaba en la cama"); // agarra el primer número
+	var e = parseInt("La pluma estaba en la cama 1"); //nan , no agarra el numero del final
+
+	//parseFloat convierte un string en numero con punto decimal
+
+	var f= parseFloat("3.1416");//3.1416
+	var g= parseFloat("2.9674 hola a todos");// agarra solo el primer número 2.9674
+	var h= parseFloat("me mama el javascript 1")//no agarra nada por que está al último
+
+	var uri = "http://boards.4chan.org/a/catalog";
+
+	var uriEncode = encodeURIComponent(uri);//encodeURIComponent codifica una URL
+	var uriDec = decodeURIComponent(uriEncode);//decoreURIComponent decodifica una URL
+
+	document.getElementById("g1").innerHTML = a;
+	document.getElementById("g2").innerHTML = b;
+	document.getElementById("g3").innerHTML = c;
+	document.getElementById("g4").innerHTML = d;
+	document.getElementById("g5").innerHTML = e;
+	document.getElementById("g6").innerHTML = f;
+	document.getElementById("g7").innerHTML = g;
+	document.getElementById("g8").innerHTML = h;
+	document.getElementById("g9").innerHTML = uriEncode;
+	document.getElementById("g10").innerHTML = uriDec;
+</script>
+</html>

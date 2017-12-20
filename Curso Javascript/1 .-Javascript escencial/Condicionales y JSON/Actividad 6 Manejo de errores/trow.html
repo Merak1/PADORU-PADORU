@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Trow</title>
+</head>
+<body>
+	<h1>Trow</h1>
+	<button onclick="bene1()">Apuchurrale</button>
+
+	<button onclick="bene2()">Bichipurrale</button>
+</body>
+<script>
+	
+	function bene1(){
+
+		try{
+
+			var mensaje = "Este es un mensaje desde JavaScript";
+
+			if (isNaN(parseInt(mensaje))) {
+				throw "Parametro pasado al metodo parseInt no es un numero";
+			}
+		}catch(error){
+			alert("Existe un Error" + " - " + error);
+		}
+
+
+	}
+
+
+
+	function bene2(){
+
+		try{
+
+			var res= 45/0;
+
+			if (res == Infinity) {
+
+				throw "División entre cero no válida";
+				}	
+			}catch (error){
+
+				alert("Existe un error" + " - " + error);
+			}
+
+		}
+
+
+
+	
+</script>
+</html>

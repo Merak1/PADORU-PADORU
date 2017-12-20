@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bebis</title>
+</head>
+<body>
+	<p>Mi Primer Elemento Parrafo</p>
+	<p>Mi Segundo Elemento Parrafo</p>
+	<p>Mi Tercer Elemento Parrafo</p>
+	<p>Mi Cuarto Elemento Parrafo</p>
+	<p>Mi Quinto Elemento Parrafo</p>
+	<p>Mi Sexto Elemento Parrafo</p>
+	<button onclick="numeroDeParrafos()">Numero de parrafos</button>
+	<button onclick="cambiarParrafos()">Cambiar parrafos</button>
+</body>
+<script type="text/javascript">
+	function numeroDeParrafos(){
+		var listaParrafos =document.getElementsByTagName('p');
+		var numeroDeParrafos = listaParrafos.length;
+		alert("La cantidad de parrafos que hay es de "+numeroDeParrafos);
+	}
+
+	function cambiarParrafos(){
+		document.getElementsByTagName("p")[0].style.backgroundColor ="orange";
+		document.getElementsByTagName("p")[1].style.backgroundColor ="red";
+		document.getElementsByTagName("p")[2].style.backgroundColor ="purple";
+		document.getElementsByTagName("p")[3].style.backgroundColor ="orange";
+		document.getElementsByTagName("p")[4].style.backgroundColor ="red";
+		document.getElementsByTagName("p")[5].style.backgroundColor ="purple";
+
+		document.getElementsByTagName("p")[0].style.fontSize ="x-large";
+		document.getElementsByTagName("p")[1].style.fontSize ="large";
+		document.getElementsByTagName("p")[2].style.fontSize ="large";
+		document.getElementsByTagName("p")[3].style.fontSize ="large";
+		document.getElementsByTagName("p")[4].style.fontSize ="large";
+		document.getElementsByTagName("p")[5].style.fontSize ="large";
+
+
+	}
+</script>
+</html>

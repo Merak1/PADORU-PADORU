@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Benis</title>
+
+</head>
+<body>
+	<h1>Primer Elemento h1</h1>
+	<h1>Segundo Elemento h1</h1>
+	<input type="text" name="namext1" value="Mi Primer Input">
+	<input type="text" name="namext2" value="Mi Segundo Input">
+
+	<div>Primer Elemento div</div>
+	<div>Segundo Elemento div</div>
+
+	<button onclick="numeroDeEncabezados()">Número de encabezados</button>
+	<button onclick="numeroDeInputs()">Número de inputs</button>
+	<button onclick="numeroDeDivs()">Número de divs</button>
+
+	<button onclick="cambiarEncabezados()">Cambiar encabezados</button>
+	<button onclick="cambiarInputs()">Cambiar inputs</button>
+	<button onclick="cambiarDivs()">Cambiar divs</button>
+
+</body>
+<script type="text/javascript">
+
+	function numeroDeEncabezados(){
+		var listaEncabezados = document.getElementsByTagName('p');
+		var numeroEncabezados = listaEncabezados.length;
+		alert("El número de encabezdos es de "+ numeroEncabezados);
+	}
+	function numeroDeInputs(){
+		var listaInputs = document.getElemenstByTagName('input');
+		var numeroInputs = listaInputs.length;
+		alert("El número de inputs es de "+ numeroInputs);
+	}
+	function numeroDeDivs(){
+		var listaDivs = document.getElementsByTagName('div');
+		var numeroDivs = listaDivs.length;
+		alert("El número de inputs es de "+ numeroDivs);
+	}
+
+	function cambiarEncabezados(){
+		document.getElementsByTagName("h1")[0].style.backgroundColor="pink";
+		document.getElementsByTagName("h1")[0].style.fontSize="xx-large";
+
+		document.getElementsByTagName("h1")[1].style.backgroundColor="red";
+		document.getElementsByTagName("h1")[1].style.fontSize="x-large";
+	}
+	function cambiarInputs(){
+		document.getElementsByTagName("input")[0].style.backgroundColor="cyan";
+		document.getElementsByTagName("input")[0].style.fontSize="x-large";	
+
+
+		document.getElementsByTagName("input")[1]style.backgroundColor="orange";
+		document.getElementsByTagName("input")[1]style.fontFamily="Verdana";
+		document.getElementsByTagName("input")[1]style.fontColor="yellow";
+	}
+	function cambiarDivs(){
+		document.getElementsByTagName("div")[0]style.backgroundColor="green";
+
+		
+		document.getElementsByTagName("div")[1]style.backgroundColor="blue";
+		
+		
+		
+	}	
+</script>
+</html>

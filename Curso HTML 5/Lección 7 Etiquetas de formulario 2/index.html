@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scaleble=no">
+	<title>Registro en una tienda</title>
+</head>
+
+<body>
+	<h1>Registro en una tienda</h1>
+<form action="">
+	<p>Nombre de usuario</p>
+	<form autocomplete="off" name="nombre de usuario">
+		<label for="Nombre de usuario"></label>
+		<input type="text" name ="nombre de usuario" placeholder="Ej:luis" required="">
+	<p>Email</p>
+		<form autocomplete="off" name="Email">
+		<label for ="Email"></label>
+		<input type="email" name="Email" placeholder="Ek: luis@gmail.com" required="email">
+	<p>
+	
+		<label for="Edad" >Edad :</label>
+		<br>
+		<input type="number" name="Edad" placeholder="Ej:21" >
+		</p>
+
+		<p>
+			<label for="dob">Fecha de nacimiento: </label>
+			<br>
+			<input type="date"  name="dob" placeholder="
+			Ej:21">
+		</p>
+	</form>
+			<label for="genre">Genero: </label>
+			<br>
+			<input type="radio" name="Genero"> Masculino
+			<br>
+			<input type="radio" name="Genero"> Femenino
+	</form>
+	
+	<p>
+	<label for="recomend">Recomendado por:</label>
+	<br>
+	<select name="recomend">
+
+
+		<option value="1">Google</option>
+		<option value="1">Amigo</option>
+		<option value="1">Redes Sociales</option>
+	</select>
+	</p>
+	<p>Comentarios</p>
+		<textarea name="Comentarios" rows="6" cols="30" placeholder="Máximo 600 caracteres" maxlength="600"></textarea>
+
+	<p>Acepto términos y condiciones</p>
+		<input type="checkbox" name="Acepto terminos y condiciones">
+
+	<p>
+	<input type="submit" name="Registar">
+	</p>
+	
+</body>
+</html>

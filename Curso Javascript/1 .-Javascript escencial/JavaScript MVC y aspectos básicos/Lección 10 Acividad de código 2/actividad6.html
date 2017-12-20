@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Actividad 6 </title>
+</head>
+<body>
+	<h1>Resultado de 10 + 2 con la operación realizada en la var</h1>
+	<p id="resultado1"></p>
+	<h1>Resultado de 4 + 6 con la operación realizada en una función</h1>
+	<p id="resultado2"></p>
+</body>
+<script>
+
+
+	var resultado = (10+2);
+	
+document.getElementById("resultado1").innerHTML = resultado;
+
+	function suma (x,y){
+		return x+y;
+	}
+
+var resultado1 = suma (4,6);
+
+document.getElementById("resultado2").innerHTML = resultado1;
+</script>
+</html>

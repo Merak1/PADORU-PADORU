@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Actividad 7</title>
+</head>
+<body>
+	<p id="m1"></p>
+	<p id="m2"></p>
+	<p id="m3"></p>
+	<p id="m4"></p>
+	<p id="m5"></p>
+	<p id="m6"></p>
+</body>
+<script>
+	//new Date("month day year hours:minutes:sec");
+
+	var dat1 = new Date();
+	var dat2 = new Date("April 25 2014");
+	var dat3 = new Date("january 16 2015");
+	var dat4 = new Date("November 29 1990");
+	var dat5 = new Date("May 22 1998");
+	var dat6 = new Date("July 12 2002");
+
+	document.getElementById("m1").innerHTML= dat1.getFullYear();
+	document.getElementById("m2").innerHTML= dat2.getFullYear();
+	document.getElementById("m3").innerHTML= dat3.getFullYear();
+	document.getElementById("m4").innerHTML= dat4.getFullYear();
+	document.getElementById("m5").innerHTML= dat5.getFullYear();
+	document.getElementById("m6").innerHTML= dat6.getFullYear();
+
+</script>
+</html>

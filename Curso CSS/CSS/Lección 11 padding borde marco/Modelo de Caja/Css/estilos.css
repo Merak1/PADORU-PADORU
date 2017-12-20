@@ -1,0 +1,10 @@
+article[class^="caja"]{
+	border:1px solid black ;
+	display: inline-block;
+	height: 200px;
+	width:400px;
+}
+.caja1{
+	margin: 30px 20px;
+	padding: 10px 10px;
+}

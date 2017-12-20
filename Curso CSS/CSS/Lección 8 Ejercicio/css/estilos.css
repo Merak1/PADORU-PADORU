@@ -1,0 +1,22 @@
+p > textarea{
+	width: 200px;
+}
+
+body{
+	margin: 20px;
+
+	font-family: verdana;
+}
+
+.email{	
+	color: #eeeeee;
+}
+.age{
+	font-color:red;
+}
+
+p,label|{
+
+	font-family: tahoma;
+
+}

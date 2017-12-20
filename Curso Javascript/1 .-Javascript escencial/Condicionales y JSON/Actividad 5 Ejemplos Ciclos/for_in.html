@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Actividad 2 for in</title>
+</head>
+<body>
+	<h1>Chichibiyé</h1>
+	<p id="bito"></p>
+	<button onclick="bollo()">puchurrale</button>
+</body>
+<script>
+	function bollo(){
+
+		var texto ="EL bito de bollo: <br>";
+
+		var broducto = {
+		ID: "251215",
+		nombre:"Juanito" ,
+		teléfono:12452 
+
+		};
+		var x;
+		for (x in broducto){
+
+		texto += broducto[x] + "<br>";
+		}
+
+		document.getElementById("bito").innerHTML = texto;
+
+
+	}
+
+
+
+</script>
+</html>

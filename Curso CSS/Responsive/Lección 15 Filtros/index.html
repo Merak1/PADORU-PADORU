@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Filtros de imagenes</title>
+</head>
+<style media="screen">
+	
+	.mona{
+		filter: blur(10px);
+		flex-grow: 1;
+	}
+	.waka{
+		filter:opacity(20%);
+		flex-grow: 2;
+	}
+	figure{
+		text-align: center;
+		padding: 100px;
+
+	}
+	img{
+			width: 400px;
+
+	}
+	#images{
+		margin: 1%;
+		text-align: center;
+		display: flex;
+		flex-flow:column; 
+	}
+</style>
+<body>
+<figure>
+<div id="images">
+<img src="images/mona.jpg" alt="mona china" class="mona">
+<img src="images/waka.jpg" alt="waka" class="waka">
+</div>
+</figure>
+</body>
+</html>

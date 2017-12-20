@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Actividad 7</title>
+</head>
+<body>
+	<p id="m1"></p>
+	<p id="m2"></p>
+	<p id="m3"></p>
+	<p id="m4"></p>
+	<p id="m5"></p>
+	<p id="m6"></p>
+</body>
+<script>
+	var cadenam1 = "Hola como ";
+	var cadenam2 = "estan ustedes?";
+
+	var cadena1 = cadenam1+cadenam2;
+
+	document.getElementById("m1").innerHTML = cadena1;
+
+	var cadenam3 = "Feliz ";
+	var cadenam4 = "como";
+	var cadenam5 = " una lombríz!!";
+
+	var cadena2 =cadenam3.concat(cadenam4,cadenam5);
+
+	document.getElementById("m2").innerHTML = cadena2;
+
+	var cadenam6 = "Pienso";
+	var cadenam7 = " luego existo";
+
+	var cadena3 = cadenam6+cadenam7;
+	document.getElementById("m3").innerHTML = cadena3;
+
+	var cadenam8  = "Vivir es ";
+	var cadenam9  = "nacer ";
+	var cadenam10 = "a cada instante.";
+
+	cadenam8+=cadenam9;
+	cadenam8+=cadenam10;
+
+	document.getElementById("m4").innerHTML = cadenam8;	
+
+	var cadenam11 = "La moda es ";
+	var cadenam12 = "lo que ";
+	var cadenam13 = "pasa de moda.";
+
+	cadenam11+=cadenam12;
+	cadenam11+=cadenam13;
+
+	document.getElementById("m5").innerHTML = cadenam11;
+
+	var cadenam14 = "La vida ";
+	var cadenam15 = "es un ";
+	var cadenam16 = "juego de ";
+	var cadenam17 = "azar.";
+
+	cadenam14 += cadenam15;
+	cadenam14 += cadenam16;
+	cadenam14 += cadenam17;
+
+	document.getElementById("m6").innerHTML = cadenam14;	
+</script>
+</html>

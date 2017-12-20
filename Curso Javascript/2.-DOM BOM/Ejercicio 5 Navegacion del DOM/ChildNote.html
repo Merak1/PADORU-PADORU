@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>BENIS</title>
+</head>
+<body>
+	<h3 id="texto1"> Navegando entre Nodos</h3>
+	<p id="texto2">Benis</p>
+</body>
+<script type="text/javascript">
+	var cambiartexto = document.getElementById('texto1').childNodes[0].nodeValue;
+
+	document.getElementById("texto2").innerHTML= cambiartexto;
+	//el metodo chidlNode determina el valor como el primer nodo que en este caso sería el h3 y al realizar el document.innterHTML con la nueva variable hace el cambio de texto a lo que había en el primer nodo. 
+	//De esta forma a la hora de visualizarlo se ve en ambos nodos el texto navegando entre nodos, pero uno estilizado como h3 y el otro como parrafo normal 
+</script>
+</html>

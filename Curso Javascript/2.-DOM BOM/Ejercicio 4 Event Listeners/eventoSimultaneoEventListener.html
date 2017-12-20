@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Benis</title>
+</head>
+<body>
+	<button id="benis">Mostrar</button>
+</body>
+<script type="text/javascript">
+	var elemento = document.getElementById('benis');
+
+	element.addEventListener("click", mostarMensaje1);
+	element.addEventListener("mouseover", mostrarMensaje2);
+
+	function mostarMensaje1(){
+		alert("El primer benis");
+	}
+
+	function mostrarMensaje2(){
+		alert("El segudo benis");
+	}
+</script>
+</html>

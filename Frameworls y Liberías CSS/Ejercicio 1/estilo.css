@@ -1,0 +1,42 @@
+body{
+	background-color: rgb(246, 252, 159);
+
+}
+#padoru{
+	text-align: center;
+}
+.album-fotos{
+	width: 100%;
+	background-color:rgb(206, 182, 138);	
+	padding:0.5vw;
+}
+h1{
+	color:rgb(130, 95, 50);
+}
+#fotos{
+	width: 100%;
+	text-align:center;
+
+}
+
+.coso{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 70%;
+
+	}
+ [class^="foto"]{
+	width: 30%;
+	background-color:#e0a502;
+	border: 1px solid black;
+	margin:  0.4vw;
+
+
+}
+.coso img{
+	width: 60%;
+	padding: 5px;
+	align-content: center;
+}
+	

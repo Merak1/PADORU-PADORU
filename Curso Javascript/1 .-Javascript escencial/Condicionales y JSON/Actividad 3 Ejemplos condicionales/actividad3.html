@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Actividad 3</title>
+</head>
+<body>
+	<button onclick="calificar()">Apachurre</button>
+
+	<p id="bebe"></p>
+</body>
+<script>
+	var nota = 5.1;
+
+	function calificar(){
+
+		if (nota > 3.0 && nota < 4.0) {
+			document.getElementById("bebe").innerHTML = "Su nota es de nivel medio!";
+
+
+		}else if ( nota > 4.0 && nota < 5.0) {
+
+		document.getElementById("bebe").innerHTML = "Su nota es de nivel alto!";	
+
+		}else if(nota > 5.0){
+		document.getElementById("bebe").innerHTML = "Su nota es de nivel alto!";				
+
+		}else{document.getElementById("bebe").innerHTML = "Su nota es de nivel bajo!";
+
+		}
+	}
+
+
+</script>
+</html>

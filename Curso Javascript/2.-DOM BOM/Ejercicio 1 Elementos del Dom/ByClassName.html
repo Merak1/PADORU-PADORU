@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<span class="miClase">
+		Mi span 1
+	</span>
+	<span class="miClase">
+		Mi span 2
+	</span>
+	<span class="miClase">
+		Mi span 3
+	</span>
+	<button onclick="cambiarSpans()">Cambiar Spans</button>
+</body>
+<script type="text/javascript">
+
+	function cambiarSpans(){
+	
+	var spans= document.getElementsByClassName('miClase');
+
+	for(var 1 =0; i<span.length;i++){
+		spans[i].style.fontFamily ="Verdana";
+	}
+</script>
+</html>

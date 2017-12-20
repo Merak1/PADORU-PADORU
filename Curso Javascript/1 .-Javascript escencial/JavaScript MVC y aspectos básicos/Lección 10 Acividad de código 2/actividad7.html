@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Actividad 7</title>
+</head>
+<body>
+	<h1>Resultado de la resta de 12 con 5 con la operación realizada en la var</h1>
+	<p id="resultado1"></p>
+	<h1>Resultado de la resta de 14 con 6 con la operación realizada en una función</h1>
+	<p id="resultado2"></p>
+	
+</body>
+<script>
+	var resultado1 = (15-5);
+
+	document.getElementById("resultado1").innerHTML = resultado1;
+
+	function resta (x,y){
+		return x-y;
+	}
+
+	var resultado2 = resta (14,6);
+
+	document.getElementById("resultado2").innerHTML = resultado2;
+</script>
+</html>

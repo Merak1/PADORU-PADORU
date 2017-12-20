@@ -1,0 +1,24 @@
+body{
+	background-color: gray;
+}
+footer{
+	margin-top: 20px;s
+}
+img{
+	border-radius: 10px;
+}
+#título{
+	font-family: helvetica;
+	font-size: 26px;
+
+}
+#header{
+display: block;
+margin: 0 auto;
+
+}
+.menu{
+	font-size: 12px;
+	font-family: helvetica;
+	font-color: black;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Actividad 4</title>
+</head>
+<body>
+	<h1 id="Vehiculo1"></h1>
+		<p id="placa1"></p>
+		<p id="marca1"></p>
+		<p id="modelo1"></p>
+	<h1 id="Vehiculo2"></h1>
+		<p id="placa2"></p>
+		<p id="marca2"></p>
+		<p id="modelo2"></p>
+	<h1 id="Vehiculo3"></h1>
+		<p id="placa3"></p>
+		<p id="marca3"></p>
+		<p id="modelo3"></p>
+</body>
+<script>
+
+	var v1 = "Vehiculo 1";
+
+	var vehiculo1 = {
+		placa : "354 YTN",
+		marca : "HONDA",
+		modelo: 98723
+	}
+
+	var v2 = "Vehiculo 2";
+
+	var vehiculo2 = new Object();
+	vehiculo2.placa = "412 AMS";
+	vehiculo2.marca = "Mitsubishi";
+	vehiculo2.modelo= 476122;
+
+	var v3 = "Vehiculo 3";
+
+	function vehiculo3 (placa, marca, modelo){
+		this.placa = placa;
+		this.marca = marca;
+		this.modelo= modelo;
+	}
+
+	var vehiculo3 = new vehiculo3 ("003 TOA" , "General Motors" ,403020);
+
+
+	document.getElementById("Vehiculo1").innerHTML  = v1;
+
+	document.getElementById("placa1").innerHTML  = vehiculo1.placa;
+	document.getElementById("marca1").innerHTML  = vehiculo1.marca;
+	document.getElementById("modelo1").innerHTML  = vehiculo1.modelo;
+
+	document.getElementById("Vehiculo2").innerHTML  = v2;
+
+	document.getElementById("placa2").innerHTML  = vehiculo2.placa;
+	document.getElementById("marca2").innerHTML  = vehiculo2.marca;
+	document.getElementById("modelo2").innerHTML  = vehiculo2.modelo;
+
+	document.getElementById("Vehiculo3").innerHTML  = v3;
+
+	document.getElementById("placa3").innerHTML  = vehiculo3.placa;
+	document.getElementById("marca3").innerHTML  = vehiculo3.marca;
+	document.getElementById("modelo3").innerHTML  = vehiculo3.modelo;
+</script>
+</html>

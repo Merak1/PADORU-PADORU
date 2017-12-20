@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Arrays</title>
+</head>
+<body>
+	<h1>Arrays</h1>
+
+	<p id="a1"></p>
+	<p id="a2"></p>
+
+	<h1>Arrays operaciones </h1>
+
+	<p id="a3"></p>
+	<p id="a4"></p>
+	<p id="a5"></p>
+	<p id="a6"></p>
+	<p id="a7"></p>
+	<p id="a8"></p>
+</body>
+<script>
+	//arrays definición
+
+	var futbol =["Balón","Jugadores","Cancha"];
+
+	var animal = new Array("Oso", "Aguila", "Ballena");
+
+	document.getElementById("a1").innerHTML = futbol;
+	document.getElementById("a2").innerHTML = animal;
+
+	//Operaciones Array
+
+	futbol[1]="Arbitros";//Reemplazar un valor de un array
+
+	document.getElementById("a3").innerHTML = futbol;
+
+	document.getElementById("a4").innerHTML = futbol.lenght;//obtener el tamaño de un array
+
+	futbol[futbol.length]= "Hinchada";//Almacenar un valor en la última posición de un array
+
+	document.getElementById("a5").innerHTML =futbol;
+
+	futbol.reverse();//Invierte el orden de los elementos
+
+	document.getElementById("a6").innerHTML =futbol;
+
+	animales.sort(); //Ordenar los elementos 
+
+	document.getElementById("a7").innerHTML = animales;
+
+	var arrayConca= animal.concat(futbol);//concatena dos arrays.
+
+	document.getElementById("a8").innerHTML = arrayConca;
+
+
+
+</script>
+</html>

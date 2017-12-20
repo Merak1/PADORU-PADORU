@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Funciones anidadas</title>
+</head>
+<body>
+	<button id="benis">Boton</button>
+</body>
+<script type="text/javascript">
+	var  nombre = "Pancho Lopez";
+	var estatura = 1.60;
+
+	document.getElementById('benis').addEventListener("click",function(){
+		saludar(nombre,estatura);
+	});
+
+	function saludar(nombre,estatura){
+		alert("Hola "+nombre+ " tu mides " + estatura+". ");
+	}
+</script>
+</html>

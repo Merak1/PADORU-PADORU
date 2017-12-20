@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Actividad 3</title>
+</head>
+<body>
+
+	<h1>Persona 1</h1>
+	<p id="id1"></p>
+	<p id="nombre1"></p>
+	<p id="edad1"></p>
+	
+	<h1>Persona 2</h1>
+	<p id="id2"></p>
+	<p id="nombre2"></p>
+	<p id="edad2"></p>
+	
+	<h1>Persona 3</h1>
+	<p id="id3"></p>
+	<p id="nombre3"></p>
+	<p id="edad3"></p>
+
+
+</body>
+
+<script>
+
+	var persona1 = {
+		id: "09823",
+		nombre: "Norberto Zambrano",
+		edad: 23 
+	}
+
+	var persona2 	= new Object();
+	persona2.id 	= "09283";
+	persona2.nombre = "Michel Rodriguez";
+	persona2.edad 	= 19;
+
+	function persona3 (id, nombre, edad ){
+
+		this.id 	= id;
+		this.nombre = nombre;
+		this.edad 	= edad;
+	}
+
+	var persona3 = new persona3 ("09238","Itchel Velazquez",22 );
+
+
+	document.getElementById("id1").innerHTML 	= persona1.id ;
+	document.getElementById("nombre1").innerHTML = persona1.nombre;
+	document.getElementById("edad1").innerHTML = persona1.edad ;
+
+	document.getElementById("id2").innerHTML 	= persona2.id ;
+	document.getElementById("nombre2").innerHTML = persona2.nombre;
+	document.getElementById("edad2").innerHTML = persona2.edad ;
+
+	document.getElementById("id3").innerHTML 	= persona3.id ;
+	document.getElementById("nombre3").innerHTML = persona3.nombre;
+	document.getElementById("edad3").innerHTML = persona3.edad ;
+
+</script>
+</html>

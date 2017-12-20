@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Actividad 5</title>
+</head>
+<body>
+	<p id="m1"></p>
+	<p id="m2"></p>
+	<p id="m3"></p>
+
+</body>
+	<script>
+	
+	var frutas 	=["Mango","Kiwi","Toronja"];
+	var colores	=["Negro","Violeta","Verde"];
+	var animales=["Leopardo", "Vaca", "Cerdo"];
+	var equipos	=["River Plate", "America De Cali", "Gremio" ];
+	var planetas=["Jupiter", "Urano", "Saturno"];
+	var flores	=["Hortensia", "Margarita", "Azucena"];
+
+	var frucolo = frutas.concat(colores);
+	var aniequip= animales.concat(equipos);
+	var planflor= planetas.concat(flores);
+
+	document.getElementById("m1").innerHTML = frucolo; 
+	document.getElementById("m2").innerHTML = aniequip;
+	document.getElementById("m3").innerHTML = planflor;
+	</script>
+</html>

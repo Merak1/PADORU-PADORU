@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Actividad 2 </title>
+</head>
+<body>
+
+	<h1 id="Producto1"></h1>
+	<p id="codigo1"></p>
+	<p id="nombre1"></p>
+	<p id="precio1"></p>
+
+	<h1 id="Producto2"></h1>
+	<p id="codigo2"></p>
+	<p id="nombre2"></p>
+	<p id="precio2"></p>
+
+	<h1 id="Producto3"></h1>
+	<p id="codigo3"></p>
+	<p id="nombre3"></p>
+	<p id="precio3"></p>
+
+</body>
+<script>
+	var p1 = "Gorra";
+
+	var producto1 = {
+		codigo: "GORADU",
+		nombre: "Gorra para adulto marca GAP",
+		precio: 400
+	}
+	var p2 = "Blusa ";
+
+	var producto2 = new Object();
+	producto2.codigo ="BLUDAM";
+	producto2.nombre = "Blusa para dama marca FRU";
+	producto2.precio = 500
+
+	var p3 = "Chamarra";
+	function producto3 (codigo, nombre, precio){
+		this.codigo = codigo;
+		this.codigo = nombre;
+		this.precio = precio;
+	}
+
+	var producto3 = new producto3 ("CHAMCAB", "Chamarra de cuero para caballero" , 3500);
+
+	document.getElementById("Producto1").innerHTML = p1 ;
+
+	document.getElementById("codigo1").innerHTML = producto1.codigo ;
+	document.getElementById("nombre1").innerHTML = producto1.nombre ;
+	document.getElementById("precio1").innerHTML = producto1.precio ;
+
+	document.getElementById("Producto2").innerHTML = p2 ;
+
+	document.getElementById("codigo2").innerHTML = producto2.codigo;
+	document.getElementById("nombre2").innerHTML = producto2.nombre ;
+	document.getElementById("precio2").innerHTML = producto2.precio ;
+
+	document.getElementById("Producto3").innerHTML = p3 ;
+
+	document.getElementById("codigo3").innerHTML = producto3.codigo;
+	document.getElementById("nombre3").innerHTML = producto3.nombre ;
+	document.getElementById("precio3").innerHTML = producto3.precio ;
+
+</script>
+
+</html>

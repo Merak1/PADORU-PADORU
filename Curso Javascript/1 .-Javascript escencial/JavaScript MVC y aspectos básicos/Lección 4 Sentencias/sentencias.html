@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sentencias</title>
+
+</head>
+<body>
+	
+<h1>Sentencias</h1>
+
+<p id="resultado1"></p>
+<p id="mensaje"></p>
+
+
+</body>
+
+<script>
+	//sentencias
+	var u = 8 -4;
+	var p = 3 * u;
+
+document.getElementById("resultado1").innerHTML = p;
+
+//las sentencias se determinan por que terminan en ";"
+
+//sentencias agrupadas en bloque a traves de una función
+
+function miFuncion (argument){
+	var hola = "I love js";
+	document.getElementById("mensaje").innerHTML = hola;
+}
+
+miFuncion();
+
+//las funciones agrupan varias instrucciones dentro de un bloque
+</script>
+</html>

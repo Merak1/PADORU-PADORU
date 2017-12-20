@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Benis</title>
+</head>
+<body>
+	<button onclick="benis()">benis?</button>
+</body>
+<script type="text/javascript">
+
+		function benis(){
+		var parrafo1 = document.createElement("h1");
+		var texto1 = document.createTextNode("Esto es un texto primero");
+
+		parrafo1.appendChild(texto1);
+		document.body.appendChild(parrafo1);
+
+		var parrafo2 = document.createElement("h1");
+		var texto2 = document.createTextNode("Esto es un texto segundo");
+
+		parrafo2.appendChild(texto2);
+		document.body.appendChild(parrafo2);
+		
+		var parrafo3 = document.createElement("h1");
+		var texto3 = document.createTextNode("Esto es un tercero");
+
+		parrafo3.appendChild(texto3);
+		document.body.appendChild(parrafo3);
+	}
+</script>
+</html>

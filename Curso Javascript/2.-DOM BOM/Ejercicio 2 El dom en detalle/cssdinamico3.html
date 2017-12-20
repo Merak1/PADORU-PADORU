@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="text" id="miInput" name="benis">
+
+	<div id="miDiv">Mi Div</div>
+
+	<p id="miP">Pienso. luego existo</p>
+
+	<button onclick="benis1()"></button>
+	<button onclick="benis2()"></button>
+	<button onclick="benis3()"></button>
+</body>
+<script type="text/javascript">
+	function benis1(){
+		document.getElementById('miInput').style.backgroundColor="blue";
+		document.getElementById('miInput').style.color="yellow";
+		document.getElementById('miInput').style.width="200px";
+		document.getElementById('miInput').style.height="80px";
+
+	}
+
+	function benis2(){
+		document.getElementById('miDiv').style.backgroundColor ="orange";
+		document.getElementById('miDiv').style.color="white";
+		document.getElementById('miDiv').style.height="800px";
+		document.getElementById('miDiv').style.fontSize="x-large";
+
+	}
+
+	function benis3(){
+		document.getElementById('miP').style.backgroundColor="green";
+		document.getElementById('miP').style.color="red";
+		document.getElementById('miP').style.fontSize="x-large";
+	}
+</script>
+</html>

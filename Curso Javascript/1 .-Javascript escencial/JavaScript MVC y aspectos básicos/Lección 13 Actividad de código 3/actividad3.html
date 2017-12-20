@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Actividad 3</title>
+</head>
+<body>
+	<p id="c1"></p>
+</body>
+<script>
+	var m1 = 70;
+
+	Number.prototype.resta = function() {
+		return this -20;
+	};
+
+	
+	document.getElementById("c1").innerHTML =m1.resta(); 
+</script>
+</html>

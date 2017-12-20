@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<title>Actividad 5 </title>
+</head>
+<body>
+	<h1 id="comp1"></h1>
+		<p id="codigo1"></p>
+		<p id="ram1"></p>
+		<p id="discoD1"></p>
+
+	<h1 id="comp2"></h1>
+		<p id="codigo2"></p>
+		<p id="ram2"></p>
+		<p id="discoD2"></p>
+
+	<h1 id="comp3"></h1>
+		<p id="codigo3"></p>
+		<p id="ram3"></p>
+		<p id="discoD3"></p>
+</body>
+<script>
+
+	//computadora1
+	var c1 = "Computadora 1";
+
+	document.getElementById("comp1").innerHTML = c1;
+
+	var computadora1 = {
+		codigo:"89389",
+		ram: "6GB",
+		discoDuro: 919283
+	}
+	document.getElementById("codigo1").innerHTML = computadora1.codigo;
+	document.getElementById("ram1").innerHTML = computadora1.ram;
+	document.getElementById("discoD1").innerHTML = computadora1.discoDuro;
+	
+	//computadora 2
+	var c2 = "Computadora 2";
+
+	document.getElementById("comp2").innerHTML = c2;
+
+	var computadora2 = {
+		codigo:"51236",
+		ram:"6GB",
+		discoDuro: 214525
+	}
+
+	document.getElementById("codigo2").innerHTML = computadora2.codigo;
+	document.getElementById("ram2").innerHTML = computadora2.ram;
+	document.getElementById("discoD2").innerHTML = computadora2.discoDuro;
+
+	//Computadora 3
+	var c3 = "Computadora 3";
+
+	document.getElementById("comp3").innerHTML = c3;
+
+	var computadora3 = {
+		codigo: "32154",
+		ram: "10GB",
+		discoDuro: 123548
+	}
+
+	document.getElementById("codigo3").innerHTML = computadora3.codigo;
+	document.getElementById("ram3").innerHTML = computadora3.ram;
+	document.getElementById("discoD3").innerHTML = computadora3.discoDuro;
+</script>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pringles de queso</title>
+</head>
+<body>
+	<div id="div1">
+		<p id="p1">Este es el primer parrafo</p>
+		<p id="p2">Este es el segundo parrafo</p>
+		<a id="a1" href="#">Este es un enlace</a>
+	</div>
+	
+</body>
+<script type="text/javascript">
+	var div1 = document.getElementById("div1");
+	var p1 = document.getElementById("p1");
+	var p2 = document.getElementById("p2");
+	var a1 = document.getElementById("a1");
+
+	div1.removeChild(p2);
+	div1.removeChild(a1);
+
+</script>
+</html>

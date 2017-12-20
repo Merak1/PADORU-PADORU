@@ -1,0 +1,37 @@
+body{
+	margin: 20px;
+	font-family: "Lora";
+
+}
+
+.resaltado{
+	background-color: yellow;
+	color: black;
+}
+
+#menu-principal{
+	padding: 10px 0px;
+	font-family: "FuenteLato";	
+	src:"url(../fuentes/Lato-Regular.ttf)";
+	font-style:italic;
+}
+
+footer{
+	border-top: solid 1px black;
+	padding-top: 10px;
+	text-align: center;
+}
+
+h1.titulo{
+	background-color: aliceblue;
+	text-align: center;
+	padding: 10px;
+	font-family: "FuenteLato";	
+	src:"url(../fuentes/Lato-Regular.ttf)";
+}
+
+::selection {
+	background:rgb(193, 159, 234);
+	color: 	rgb(66, 5, 5);
+	text-shadow: 6px, 6px, black;
+}

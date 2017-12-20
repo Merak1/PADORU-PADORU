@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Benis</title>
+</head>
+<body>
+	<form id="benis">
+	<h1 id="titulo">Registro de Estudiantes</h1>
+	<p>Nombres :
+	<input type="text" name="Nombres">
+	</p>
+	<p>Apellidos :
+	<input type="text" name="Apellidos">
+	</p>
+	<p>Dirección :
+	<input type="text" name="Dirección">
+	</p>
+	<p>Edad: 
+	<input type="text" name="Edad">
+	</p>
+	<p>Fecha de Nacimiento: 
+	<input type="date" name="Fecha de Nacimiento">
+	</p>
+	<p>Lugar de Nacimiento:
+	<input type="text" name="Lugar de Nacimiento">
+	</p>
+	<p>Estado Civil:
+	<input type="text" name="Estado Civil">
+	</p>
+	
+	<button>Registrar Almuno</button>
+	<button onclick="cambiarTitulo()">Cambiar Título</button>
+	<button onclick="cambiarColor()">Cambiar Color</button>
+</form>
+</body>
+<script type="text/javascript">
+	function cambiarColor(){
+		var caja = document.getElementById("benis");
+		caja.setAttribute("color","red");
+	}
+
+	function cambiarTitulo(){
+		var titulo = document.getElementById('titulo');
+
+		titulo.innerHTML = "Registro de Docentes";
+	}
+</script>
+</html>

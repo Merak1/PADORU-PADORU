@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Finally</title>
+</head>
+<body>
+	<h1>Finally</h1>
+	<p id="mensaje"></p>
+
+	<button onclick="metokur()">Ejecuta función uno</button>
+
+
+
+</body>
+<script>
+	 function metokur(){
+
+	 	try {
+
+	 		var edad = 60 ;
+
+	 		calcular(edad);//La función calcular no está definida
+
+		} catch(error){
+
+			alert("Existe un error" + "-" + error.message);
+
+		} finally{
+
+				
+
+		}
+
+
+
+	 }
+
+</script>
+</html>

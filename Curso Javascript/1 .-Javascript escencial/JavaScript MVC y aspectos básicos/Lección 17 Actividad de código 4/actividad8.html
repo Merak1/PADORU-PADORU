@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Actividad 9</title>
+</head>
+<body>
+	<p id="m1"></p>
+	<p id="m2"></p>
+	<p id="m3"></p>
+	<p id="m4"></p>
+	<p id="m5"></p>
+	<p id="m6"></p>
+</body>
+<script>
+//new Date("month day year hours:minutes:sec");
+
+	var p1 = new Date();
+	var p2 = new Date("May 27 2016");
+	var p3 = new Date("February 9 2005");
+	var p4 = new Date("November 12 2000");
+	var p5 = new Date("July 15 1998");
+	var p6 = new Date("April 30 1996");
+
+	document.getElementById("m1").innerHTML = p1.getDate();
+	document.getElementById("m2").innerHTML = p2.getDate();
+	document.getElementById("m3").innerHTML = p3.getDate();
+	document.getElementById("m4").innerHTML = p4.getDate();
+	document.getElementById("m5").innerHTML = p5.getDate();
+	document.getElementById("m6").innerHTML = p6.getDate();
+
+
+</script>
+</html>

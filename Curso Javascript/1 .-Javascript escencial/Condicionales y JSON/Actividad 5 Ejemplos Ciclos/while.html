@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>While</title>
+</head>
+<body>
+	<h1>While</h1>
+	<p id="bito"></p>
+	<button onclick="bollo()">puchurrame</button>
+</body>
+<script>
+		
+	var conta = 1;
+
+	var texto= "";
+
+function bollo(){
+
+	while(conta<=100){
+
+		if (conta%2 !=0) {
+		texto += conta + "<br>";
+		}
+	conta ++;
+}
+	document.getElementById("bito").innerHTML = texto;
+
+}
+
+</script>
+</html>

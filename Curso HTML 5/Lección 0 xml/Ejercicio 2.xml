@@ -1,0 +1,32 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<factura id="123" fecha="2017-05-12">
+   <cliente>
+	<nombre>José</nombre>
+	<apellido>Arias</apellido>
+	<telefono>54245632</telefono>	
+   </cliente>
+<articulos>
+    <articulo id="1">
+    	<descripción>Calculadora</descripción>
+    	<precio-unitario>150.00</precio-unitario>
+    	<precio-final>165.00</precio-final>
+    	<cantidad>2</cantidad>
+    </articulo>
+      <articulo id="2">
+    	<descripción>Lámpara</descripción>
+    	<precio-unitario>200.00</precio-unitario>
+    	<precio-final>215.00</precio-final>
+    	<cantidad>1</cantidad>
+    </articulo>
+      <articulo id="3">
+    	<descripción>Reloj de bolsillo</descripción>
+    	<precio-unitario>1400.00</precio-unitario>
+    	<precio-final>1500.00</precio-final>
+    	<cantidad>1</cantidad>
+    </articulo>
+    </articulos>
+
+    <precio-total>2045.00</precio-total>
+</factura>

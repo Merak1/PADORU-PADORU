@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Try Catch</title>
+</head>
+<body>
+	<h1>Try Catch </h1>
+
+	<button onclick="funcion1()">Bito 1 </button>
+	<button onclick="funcion2()">Bito 2 </button>
+</body>
+<script>
+	
+	function funcion1(){
+		try{
+		var numero1 = 50;
+
+		var numero = numero1 + numero2;// la variable numero dos no está definida
+
+	}catch(error){
+
+		alert("Esiste un error" +" - " + error.message);
+
+	}
+}
+
+	function funcion2(){
+		
+		try {
+
+			var persona = null;
+			var nombre = persona.nombre//se está tratando de acceder a un objeto en null por eso muestar el error 
+
+
+
+		}catch(error){
+
+			alert("existe un error " + " - " + error.message);
+
+		}
+
+	}
+
+</script>
+</html>

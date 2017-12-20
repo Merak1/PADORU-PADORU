@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p>Mi texto 1</p>
+	<p>Mi texto 2</p>
+	<p>Mi texto 3</p>
+	<p>Mi texto 4</p>
+	<button onclick="benis()">Benis</button>
+</body>
+<script type="text/javascript">
+	function benis(){
+		var listaNodos = document.getElementsByTagName('p');
+
+		for(i=0;i<listaNodos.length; i++){
+			listaNodos[i].style.color = "orange";
+		}
+	} 
+</script>
+</html>

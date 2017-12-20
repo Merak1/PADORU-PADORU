@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Actividad 9</title>
+</head>
+<body>
+	<h1>Resultado de la división de 144  con 12 con la operación realizada en la var</h1>
+	<p id="resultado1"></p>
+	<h1>Resultado de la división de 160 con 4 con la operación realizada en una función</h1>
+	<p id="resultado2"></p>
+</body>
+<script>
+	var resultado1 = (144 /12);
+
+	document.getElementById("resultado1").innerHTML = resultado1;
+
+	function division(x,y){
+		return x/y;
+	}
+
+	var resultado2 = division(160,4);
+
+
+	document.getElementById("resultado2"). innerHTML = resultado2;
+
+</script>
+</html>

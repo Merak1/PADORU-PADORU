@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+
+	<title>Mi segundo JS</title>
+</head>
+<body>
+	<p id="empresas"></p>
+</body>
+<script >
+	var jsonText = '{"empresas":[' + 
+'{"nip":"21154214", "nombre":"TCC", "telefono":"33249332", "email":"txx@cmail.es"},' +
+'{"nip":"21154214", "nombre":"NAP", "telefono":"21450078", "email":"ldd@vmail.es"},' +
+'{"nip":"21154214", "nombre":"PEN", "telefono":"14525476", "email":"kpl@cmail.es"},' +
+'{"nip":"21154214", "nombre":"ANS", "telefono":"54125147", "email":"lpk@cmail.es"},' +
+'{"nip":"21154214", "nombre":"BHF", "telefono":"98701452", "email":"skd@cmail.es"},' +
+'{"nip":"21154214", "nombre":"FYE", "telefono":"32254140", "email":"nbv@cmail.es"},' +
+'{"nip":"21154214", "nombre":"CVZ", "telefono":"94855142", "email":"yte@cmail.es"},' +
+'{"nip":"21154214", "nombre":"PSE", "telefono":"77142241", "email":"cvd@cmail.es"},' +
+'{"nip":"21154214", "nombre":"ONX", "telefono":"01542140", "email":"wer@cmail.es"}' +
+']}';
+
+ var js0bj = JSON.parse(jsonText);
+
+
+ function leerJson (json){
+ 	var out = "----------Empresas--------<br>";
+ 	var i;
+
+ 	for(i=0;i<json.empresas.length;i++){
+ 		out +=	"Nip:"+json.empresas[i].nip+"-"+
+ 				"Nombre:"+json.empresas[i].nombre+"-"+
+ 				"Telefono:"+json.empresas[i].telefono+"-"+
+ 				"E-mail:"+json.empresas[i].email+"<br>";
+ 	}
+ 	document.getElementById('empresas').innerHTML=out;
+
+
+}
+ 	leerJson(js0bj);
+</script>
+</html>

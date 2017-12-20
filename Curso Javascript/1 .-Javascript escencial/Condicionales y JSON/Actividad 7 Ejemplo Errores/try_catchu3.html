@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Try catchu</title>
+</head>
+<body>
+	<p id="mensaje"></p>
+	<button onclick="bito()">puchale</button>
+</body>
+
+<script>
+	
+	
+
+	function bito(){
+
+		try{
+			var estudiante = null;
+			alert(estudiante.nombre);
+
+			}catch(error){
+
+				alert( "Existe un error" + " - " + error.message);
+			} finally{
+				document.getElementById("mensaje").innerHTML = "Estamos en la sentencia finally";
+			}
+		}
+
+
+
+
+
+	}//fin function
+</script>
+</html>

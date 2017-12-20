@@ -1,0 +1,276 @@
+body{
+	background: black;
+	font-family: "Dancing Script";
+	text-align: center;
+	}
+#contenido{
+	text-align: center;
+	width: 100%;
+	animation-name: slide;
+	animation-duration: 3s; 
+	animation-fill-mode: forwards; 
+	}
+	h1{
+		color:white;
+		text-shadow:1px 1px 2px #02010a;
+		}
+	 ul li{
+		list-style: none;
+		
+		padding: 15px;
+	}
+	 a{
+		text-decoration: underline;
+		color:white;
+}
+
+#container{
+
+	border: 10px;
+	display: flex;
+	margin-top: 0px;
+	border-radius:10px 10px 0px 0px;
+  	background-color:#5b7989;	
+	}
+
+	.c1 {
+		width: 100%;
+		padding:10px;
+		text-align: left; 
+		font-size:.80em;
+
+	}
+	.c2{
+		font-size: .55em;
+	}
+	.c2 ul {
+		display: flex;   
+	    flex-direction: row wrap;
+		padding-top: 1.5em;
+		margin:1em;
+	}
+	.c2 ul li{
+		font-size:25px;
+	}
+	.li-2  a{
+		text-decoration: none;
+}
+
+/*Aca empiezan las imágenes*/
+
+#fotos{
+		margin-top: 0px;
+		width: 100%;
+		background-color: #d5c75f;
+		}
+		img{
+	
+		box-shadow: 2px 2px  #02010a;
+		border: 10px;
+		margin:15px;
+		}
+		.retratos{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+
+		.retratos img{
+			width: 70%;
+		}
+		.retratos:nth-child(even) img{
+			filter: grayscale(100%); 
+		}
+		.imagen1{
+			order:1;
+			width:33.3%;
+		}
+		.imagen1 img{
+			filter: blur(10px);
+		}
+		.imagen2{
+			order:2;
+			width:33.3%;	
+		}
+		.imagen3{
+			order:3;
+			width:33.3%;
+		}
+		.imagen3{
+			filter: sepia(100%);
+		}
+		.imagen4{
+			order:4;
+			width:33.3%;
+		}
+		.imagen5{
+			order:5;
+			width:33.3%;
+		}
+		.imagen6{
+			order:6;
+			width:33.3%;	
+		}
+
+		.retratos [class^="imagen"]{
+			padding-top:20px;
+			padding-bottom:20px;}
+/*Aquí empieza el footer*/		
+footer{
+	
+	border-radius:0px 0px 10px 10px;
+	
+	}
+	footer a{
+		color:black;
+	}
+	#Pies ul {
+		display: flex;   
+	    flex-direction: column;
+		
+	}
+	#Pies ul a{
+		text-decoration: none;
+	}
+	#Pies li{
+		font-size: 1.3em;
+	}
+
+	#Pies{
+		display: flex;
+		flex-direction: row;
+	 	flex-wrap: wrap;
+		width: 100%;
+		background-color: #C6d5c5;
+		border-radius:0px 0px 10px 10px;}
+
+	#Pies p:first-of-type {
+		font-size:2em;
+		 font-weight: bold;
+
+	}
+
+
+	.menu1-Contacto{
+	order: 1;
+	width: 25%;
+	flex-grow:1;
+	
+	}
+	.menu2-Terminos{
+	order: 2;
+	width: 25%;
+	flex-grow:1;
+	}
+	.menu3-Redes{
+	order: 3;
+	width: 25%;
+	flex-grow:1;
+		}
+	.menu4-Derechos{
+	order: 4;
+	width: 25%;
+	flex-grow:1;}
+
+@keyframes slide {
+	0%   { transform: translate(0px,150%); }
+	60% { transform:translate(0px,-5%); }
+	100% { transform: translate(0px, 0%); }}
+
+/*media queries*/
+
+@media (max-width: 900px) {
+		#fotos{
+			text-align: center;
+		}
+
+		#contenido{
+		text-align: center;
+		
+		}
+		.c2 ul{
+		justify-content: center;
+		align-items: center;
+		}
+		.c1, .c2{
+			width: 100%;
+
+		}
+		.c1{
+		 border-radius:10px 10px 0px 0px;
+		 text-align: center;
+		 padding:10px;
+
+		}
+
+		.c2{
+		border-radius:0px ;
+			
+
+		
+		
+		}
+		.c1 ul li{
+			 
+			 justify-content: center;
+		}
+		.c2 ul{
+			 margin: 0;
+
+		}
+		#container{
+		flex-flow: column nowrap;
+		display: flex;			
+		
+
+		}
+		.c2 ul{
+		justify-content: center;
+		align-items: center;
+		}
+		.c1, .c2{
+		width: 100%;
+
+		}
+		.c1{
+		 border-radius:10px 10px 0px 0px;
+		 text-align: center;
+		 padding:5px;
+		 font-size:.80em;
+
+		}
+
+		.c2{
+		border-radius:0px ;
+		background-color:#5b7989;	
+		font-size: .55em;
+		
+		
+		}
+		.c1 ul li{
+			 
+		justify-content: center;
+		}
+		.retratos{
+		display: flex;
+		flex-direction: columns;
+		flex-wrap: wrap;
+		}
+		
+		.retratos [class^="imagen"]{
+			width: 100%;
+			justify-content: center;
+		}
+			#Pies [class^="menu"]{
+			width: 100%;
+			justify-content: center;
+		}
+		.menu1-Contacto,.menu2-Terminos,.menu3-Redes,.menu4-Derechos{
+			text-align: left;
+			padding-left: 30px;
+		}
+
+		#Pies p{
+			margin: 40px 0px 0px 0px;
+			padding-left: 30px;
+		}

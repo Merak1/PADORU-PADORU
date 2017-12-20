@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Condicional if</title>
+</head>
+<body>
+	<h1>If</h1>
+	<p>Total de la compra : $5000</p>
+	<p id="desc"></p>
+	<button onclick="descuento()">Descuento</button>
+</body>
+<script>
+
+
+	var total= 5000;
+
+	function descuento(){
+		if (total > 2000){
+		document.getElementById("desc").innerHTML= "Ganó descuento!!!";
+		}	
+}
+
+</script>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Try catchu</title>
+</head>
+<body>
+	<button onclick="bito()">Bene en la bagina</button>
+</body>
+<script>
+	function bito(){
+
+
+		var numero = -40;
+		try{
+
+			if(isNaN(Math.sqrt(numero))) {throw "No es posible calcular una raíz negativa!!";} 
+		}catch(error){
+
+		alert("Existe un error"+ " - "+ error);
+
+		}	
+	}
+
+
+
+</script>
+</html>

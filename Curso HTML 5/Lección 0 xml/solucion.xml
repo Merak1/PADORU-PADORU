@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<factura id="123" fecha="2016-07-30">
+	<cliente>
+		<nombres>Luis Manuel</nombres>
+		<apellidos>Torres</apellidos>
+		<telefono>123-12-12</telefono>
+	</cliente>
+	<articulos>
+		<articulo id="1">
+			<cantidad>2</cantidad>
+			<descripcion>Pantalon azul</descripcion>
+			<precio-unitario>100.00</precio-unitario>
+			<precio-final>200.00</precio-final>
+		</articulo>
+		<articulo id="2">
+			<cantidad>1</cantidad>
+			<descripcion>Pantalon azul</descripcion>
+			<precio-unitario>50.00</precio-unitario>
+			<precio-final>50.00</precio-final>
+		</articulo>
+	</articulos>
+	<precio-total>250.00</precio-total>
+</factura>

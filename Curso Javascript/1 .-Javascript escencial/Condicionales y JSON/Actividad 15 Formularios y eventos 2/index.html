@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Benis</title>
+</head>
+<body onload="carga()">
+	<h1 style="text-align:center">Hoja de Vida</h1>
+
+		<h1>Información Personal</h1>
+	<div  onreset="reset()" >
+		<p>Nombres: </p>
+		<input type="text" name="Nombres" id="benis" onchange="cambio()">
+		<p>Apellidos: </p>
+		<input type="text" name="Apellidos"  id="benis" onchange="cambio()">
+		<p>Dirección: </p>
+		<input type="text" name="Dirección">
+		<p>Edad: </p>
+		<input type="text"  name="Edad">
+		<p>Fecha de Nacimiento</p>
+		<input type="date" name="Fecha de Nacimiento">
+		<p>Lugar de Nacimiento</p>
+		<input type="text" name="Lugar de Nacimiento">
+		<p>Estado Civil</p>
+		<input type="text" name="Estado Civil">
+		
+		<h1>Informacion Academica</h1>
+		<p>Universidad: </p>
+		<input type="text" name="Universidad">
+		<p>Profesión: </p>
+		<input type="text" name="Profesión">
+	
+		<p>Observaciones</p>
+
+		<form rows="3" cols="20" onselect="seleccion()">
+		Observaciones
+		</form>
+	</div>
+	<br>
+<button onclick="enviar()">Enviar</button>
+<button onclick="reset()">Restablecer</button>
+
+
+<script type="text/javascript">
+	function carga(){
+		alert("“Bienvenido a su formato de Hoja de Vida”.");
+	}
+	function enviar(){
+		alert("Su Hoja de Vida ha Sido Guardada Correctamente.");
+	}
+	function seleccion(){
+		alert("Usted ha seleccionado el texto");
+	}
+	function cambio() {
+		var x= document.getElementById('benis');
+		x.value = x.value.toUpperCase();
+	}
+	function reset(){
+		alert("Se ha restablecido el Texto");
+	}
+</script>
+</body>
+</html>

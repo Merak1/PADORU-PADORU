@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Benis</title>
+</head>
+<body>
+	<button id="boton1">Boton</button>
+	<h1 id="enca1"></h1>
+</body>
+<script type="text/javascript">
+	var benis = document.getElementById('boton1');
+
+	benis.addEventListener("click", benis1);
+
+	function benis1(){
+		document.getElementById("enca1").innerHTML ="Se ha cambiado el texto";
+	}
+
+	benis.addEventListener("mouseout", benis2);
+
+	function benis2(){
+		document.getElementById("enca1").innerHTML = "Se ha relalizado un evento MouseOut";
+	}
+</script>
+</html>

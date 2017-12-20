@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>While</title>
+</head>
+<body>
+	<h1>While</h1>
+	<p id="bito"></p>
+	<button onclick="conteo()"> Puchurrale</button>
+</body>
+<script>
+	
+function conteo(){
+
+	var contador =1;
+	var texto ="";
+
+	while(contador <= 50){
+
+	 texto += contador + "<br>"
+
+	 contador++;
+
+	}
+
+	document.getElementById("bito").innerHTML = texto;
+
+
+}
+
+</script>
+</html>

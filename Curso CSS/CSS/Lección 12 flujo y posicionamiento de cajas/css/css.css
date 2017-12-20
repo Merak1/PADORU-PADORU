@@ -1,0 +1,13 @@
+h1{
+	background-color: rgb(113, 159, 81);
+	width: 4000px;
+	opacity: 0;
+}
+
+h2{
+	background-color:rgb(153,63,244);
+	display: inline;
+}
+p{
+	display: inline;
+}

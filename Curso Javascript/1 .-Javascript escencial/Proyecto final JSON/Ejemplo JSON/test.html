@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body >
+	<div 
+		style=" height: 200px;  display: flex; justify-content: center;flex-wrap: wrap; flex-direction: row;">
+			<div style="padding: 110px 60px 10px 10px;"><button onclick="mostrar()" style=" background-color:#CC99FF;border: 2px solid #9933FF; 	border-radius: 10px;"> mostrar todos los objetos</button></div>	
+			<div style="padding: 110px 60px 10px 10px;"><button style="background-color:#CC99FF;border: 2px solid #9933FF; 	border-radius: 10px;"> calcular la nota promedio</button></div>	
+			<div style="padding: 110px 60px 10px 10px;"><button style=" background-color:#CC99FF;border: 2px solid #9933FF; 	border-radius: 10px;">estudiante con la nota mayor</button></div>	
+			<div style="padding: 110px 60px 10px 10px;"><button style=" background-color:#CC99FF;border: 2px solid #9933FF; 	border-radius: 10px;">estudiante con la menor nota</button></div>	
+	</div>
+	<div style=" height: 200px; justify-content: center;">
+		
+		<p id="mostrar_objetos"></p>
+
+	</div>
+</body>
+<script type="text/javascript">
+
+		var estudiantes_arreglo ='{"estudiantes":[' + 
+			'{"codigo":"001", "nombre":"Manuel Manolo", "nota":"1"},' +
+			'{"codigo":"002", "nombre":"Roberto Robando", "nota":"1"},' +
+			'{"codigo":"003", "nombre":"Tito Tenedor", "nota":"1"},' +
+			'{"codigo":"004", "nombre":"René Robusto", "nota":"1"},' +
+			'{"codigo":"005", "nombre":"Andrés Arraigo", "nota":"1"},' +
+			'{"codigo":"006", "nombre":"Francisco Felini", "nota":"1"},' +
+			'{"codigo":"007", "nombre":"Lourdes Lombardo", "nota":"1"},' +
+			'{"codigo":"008", "nombre":"Juana Jeréz", "nota":"1"},' +
+			'{"codigo":"009", "nombre":"Monica Mondragón", "nota":"1"},' +
+			'{"codigo":"010", "nombre":"Vania Vermellón", "nota"":"1"}' +
+			']}';
+
+			
+		function mostrar(){
+						document.getElementById("mostrar_objetos").innerHTML = out;
+
+		}leer_lista_Btn1(lista);
+</script>
+</html>

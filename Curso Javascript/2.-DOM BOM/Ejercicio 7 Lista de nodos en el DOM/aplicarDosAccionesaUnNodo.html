@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div> Mi primer elelemtno div</div>
+	<div> Mi segundo elemento div</div>
+	<div> Mi tercer elemento div</div>
+	<div> Mi cuarto elemento div</div>
+	<button onclick="cambiarColor()">Benis</button>
+</body>
+<script type="text/javascript">
+	function cambiarColor(){
+		document.getElementsByTagName('div')[0].style.backgroundColor="green";
+		document.getElementsByTagName("div")[0].innerHTML="Elemento div modificado";
+		//al aplicar el [0] en tag name como el nodo que se quiere cambiar, esta funcion va al nodo 0 del documento y busca el nodo div
+	}
+</script>
+</html>

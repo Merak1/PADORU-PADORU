@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Last Child</title>
+</head>
+<script type="text/javascript">
+	function nodoUltimo(){
+		var texto ="";
+
+		var div =document.getElementById('miDiv');
+
+		var mensaje= document.getElementById("mensaje");
+
+		mensaje.innerHTML ="El último nodo del div es :"+ div.lastChild.nodeName;
+		//Se utiliza  la propiedad LastChild del div para poder obtener el último nodo hiujo con su respectivo nombre para mostrarlo en el elemento p con el ID de mensaje
+	}
+</script>
+<body>
+	<div id="miDiv">
+		<h1>Encabezado 1</h1>
+		<p>Parrafo 1 </p>
+		<input type="text" name="">
+	</div>
+	<br>
+
+	<button onclick="nodoUltimo()">Nodo ultimo</button>
+
+	<p id="mensaje"></p>
+</body>
+</html>

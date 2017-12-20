@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script>
+		
+		function letras(){
+			var x= document.getElementById("mayusculas");
+			
+			x.value= x.value.toUpperCase();
+
+		}
+	</script>
+</head>
+<body>
+<p>	Escriba su Direccion:</p>
+
+	<input type="text" id="mayusculas" onchange="letras()">
+	<p>Las letras se cambian a mayusculas cuando termine de esribir en la caja de texto</p>
+</body>
+</html>

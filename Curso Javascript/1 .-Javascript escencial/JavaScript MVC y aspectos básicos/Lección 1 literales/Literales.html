@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Objetos literales</title>
+
+</head>
+<body>
+
+<h1>Literales Numéricos</h1>
+
+<p id="numerico1"></p>
+<p id="numerico2"></p>
+<p id="numerico3"></p>
+
+<h1>Literales de cadena</h1>
+<p id="cadena1"></p>
+<p id="cadena2"></p>
+<p id="cadena3"></p>
+
+<h1>Literale de expresión</h1>
+<p id="expresión1"></p>
+<p id="expresión2"></p>
+<p id="expresión3"></p>
+
+<h1>Literales de función</h1>
+<p id="funcion"></p>
+
+
+</body>
+
+<script>
+	
+	//aquí empiezan las literales numéricas
+	document.getElementById("numerico1").innerHTML = 4343;
+	document.getElementById("numerico2").innerHTML = 23.4;
+	document.getElementById("numerico3").innerHTML = 556e2;
+
+	//aquí empiezan las cadenas
+
+	document.getElementById("cadena1").innerHTML = "Maria Perez";
+	document.getElementById("cadena2").innerHTML = "Cómo estás?";
+	document.getElementById("cadena3").innerHTML = "Hola!";	
+	//aquí empiezan las literales de expresión
+
+	document.getElementById("expresión1").innerHTML= 3+5;
+	document.getElementById("expresión2").innerHTML = 4+3;
+	document.getElementById("expresión3").innerHTML = 8/4 + 3;
+
+function miFuncion() {
+
+	document.getElementById("funcion").innerHTML = "Mi función!"
+}
+miFuncion();
+
+</script>
+</html>

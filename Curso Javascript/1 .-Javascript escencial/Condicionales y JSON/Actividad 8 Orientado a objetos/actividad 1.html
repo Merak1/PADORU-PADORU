@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>actividad 1 </title>
+</head>
+<body>
+	<h1>Propiedades de Producto</h1>
+
+	<button onclick=" miFuncion1()">Propiedades</button>
+
+	<p id="benis1"></p>
+</body>
+<script>
+	
+function Producto (codigo, nombre, cantidad, precio){
+
+	this.codigo = codigo;
+	this.nombre= nombre
+	this.cantidad = cantidad;
+	this.precio = precio;
+
+
+ 	this.mostrar = function(){
+
+ 		document.getElementById("benis1").innerHTML = "Código: " + this.codigo + "<br>" + "Nombre: " + this.nombre + "<br>" + "Cantidad: " + this.cantidad + "<br>" + "Precio: " + this.precio;
+ 	};
+}
+
+ 	var producto = new Producto ("32151", "Amaranto", 11, 152.00);
+	function miFuncion1(argument){
+
+		producto.mostrar();
+	}
+
+
+
+</script>
+</html>

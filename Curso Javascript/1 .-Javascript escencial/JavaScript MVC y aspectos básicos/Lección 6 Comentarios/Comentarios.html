@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Comentarios</title>
+</head>
+<body>
+	<h1>Comentarios </h1>
+	<p>Los comentarios nos ayudan para documentar nuestros desarrollos</p>
+
+	<h1>Comentarios de una linea</h1>
+
+	<p id="var1"></p>
+
+	<h1>Comentarios de múltiples lineas</h1>
+	<p id="resultado"></p>
+
+</body>
+<script>
+ //comentarios de una sola linea
+
+ var t= 20; //Declaramos una variable de tipo numérica con valor 20.
+
+ document.getElementById("var1").innerHTML =t; //Imprimimos la variable "t" vía Id.
+
+  //comentarios de multiples lineas
+
+  /*Esta funcion nos permite usar dos numeros y retoma el resultado
+  */
+
+  function suma(){
+  	return 4 + 10;
+  }
+
+var resultado = suma ();
+
+document.getElementById("resultado").innerHTML = resultado;
+
+//con esto se muestra el resultado en pantalla
+</script>
+</html>

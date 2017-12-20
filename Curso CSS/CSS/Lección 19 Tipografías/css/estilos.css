@@ -1,0 +1,23 @@
+@font-face{
+	font-family: "Freesans";
+	src:url("FreeSans.otf");
+
+}
+
+h1{
+	font-family: "FreeSans"; 
+	font-size: 2em;
+	font-weight: bold;
+	text-decoration: underline;
+	letter-spacing: 3px;
+
+}
+p{
+	font-family: "IndieFlower";
+	font-size: 1.2em; 
+	font-style: italic;
+	text-align: justify-all;
+	text-indent:1cm;
+	text-transform: capitalize;
+	color:blue;
+}

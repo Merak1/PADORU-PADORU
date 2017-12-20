@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Benis</title>
+</head>
+<body>
+	<button id="benis">Mostrar</button>
+</body>
+<script type="text/javascript">
+	 var elemento = document.getElementById('benis');
+
+	 elemento.addEventListener("click", mostrarMensaje1);
+	 elemento.addEventListener("click", mostrarMensaje2);
+
+	 function mostrarMensaje1(){
+	 	alert("Benis, exodo");
+
+	 }
+
+	 function mostrarMensaje2(){
+	 	alert("Benis, la venganza de los caídos");
+	 }
+	 //Se linkea una variable elemento a el id benis, después se genera un event listener con esta  misma variable y a cada una se le añade una funcion (mostrarMensaje1-2), al eecutar el codigo y hacer click salen en orden uno tras otro
+</script>
+</html>

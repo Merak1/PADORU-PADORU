@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Do while</title>
+</head>
+<body>
+	<h1>Do while</h1>
+	<p id="bito"></p>
+	<button onclick="conteo()">bito de bollo</button>
+</body>
+<script>
+	
+	function conteo(){
+
+		var contador = 50;
+		var texto="";
+
+		do{
+
+			texto+= contador + "<br>";
+
+			contador++
+
+		}while(contador <=100)
+		document.getElementById("bito").innerHTML = texto;
+	}
+</script>
+</html>
