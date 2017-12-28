@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Benis</title>
+</head>
+<body>
+
+
+<button onclick="abrirVentana1()">Abrir ventana 1</button>
+<button onclick="abrirVentana2()">Abrir ventana 2</button>
+<button onclick="abrirVentana3()">Abrir ventana 3</button>
+<button onclick="abrirVentana4()">Abrir ventana 4</button>	
+
+<button onclick="cerrarVentana1()">Cerrar ventana 1</button>
+<button onclick="cerrarVentana2()">Cerrar ventana 2</button>
+<button onclick="cerrarVentana3()">Cerrar ventana 3</button>
+<button onclick="cerrarVentana4()">Cerrar ventana 4</button>
+
+
+<script type="text/javascript">
+	var ventana1;
+	var ventana2;
+	var ventana3;
+	var ventana4;
+
+	function abrirVentana1(){
+		ventana1 = window.open("http://www.nyaa.si","ventana1","location=1");
+		ventana1.focus();//se manda focus para que la ventana se convierta en la ventana activa		
+	}
+	function abrirVentana2(){
+		ventana2 = window.open("http://boards.4chan.org/a/catalog","ventana2","location1");
+		ventana2.focus();
+	}
+	function abrirVentana3(){
+		ventana3 = window.open("https://github.com/Merak1","ventana3","location1");
+		ventana3.focus();
+	}
+	function abrirVentana4(){
+		ventana4 = window.open("https://static.zerochan.net/Toudou.Chise.full.2140767.jpg","ventana4","location0");
+		ventana4.focus();
+	}
+
+	function cerrarVentana1(){
+		ventana1.close();
+	}
+	function cerrarVentana2(){
+		ventana2.close();
+	}
+	function cerrarVentana3(){
+		ventana3.close();
+	}
+	function cerrarVentana4(){
+		ventana4.close();
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Actividad 4</title>
+</head>
+<body>
+	<button onclick="info()">Info Pantalla</button>
+	<p id="info"></p>
+</body>
+<script type="text/javascript">
+
+	function info(){
+		var info="";
+		info+= "Información de la pantalla <br>";
+		info+= "Alto permitido = "+screen.availHeight +"<br>";
+		info+= "Ancho permitido ="+screen.availWidth +"<br>";
+		info+= "Altura total = "+screen.height +"<br>";
+		info+= "Ancho total = "+screen.width +"<br>";
+		info+= "Numero de bits de colores = "+screen.colorDepth +"<br>";
+		document.getElementById('info').innerHTML = info;
+	}
+</script>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Actividad 2</title>
+</head>
+<body>
+	<button onclick="abrirVentana()">Abrir ventana</button>
+	<button onclick="moverVentana()">Mover ventana</button>
+</body>	
+<script type="text/javascript">
+	var ventana;
+	function abrirVentana(){
+		ventana=window.open("","blank_","width=800,height=500");
+		ventana.focus();
+	}
+	function moverVentana(){
+		ventana.moveTo(500,400);
+		ventana.focus();
+	}
+</script>
+</html>

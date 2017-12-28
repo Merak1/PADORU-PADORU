@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Actividad 3</title>
+</head>
+<body>
+	<button onclick="abrirVentana()">Abrir Ventana</button>
+	<button onclick="cambiarVentana()">Cambiar dimensión de la Ventana</button>
+</body>
+<script type="text/javascript">
+	var ventana;
+	function abrirVentana(){
+		ventana=window.open("","blank_","width=300,height=300");
+		ventana.focus();
+	}
+	function cambiarVentana(){
+		ventana.resizeTo(600,600);
+		ventana.focus();
+	}
+</script>
+</html>

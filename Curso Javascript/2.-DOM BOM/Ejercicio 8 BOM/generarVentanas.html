@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Benis</title>
+</head>
+<body>
+	<button onclick="abrirVentana1()">Abrir ventana</button>
+	<button onclick="abrirVentana2()">Abrir otra ventana</button>
+	
+	<script type="text/javascript">
+		var ventana1;
+		var ventana2;
+
+		function abrirVentana1(){
+			ventana1 = window.open("","_blank","width=500,height=400");
+			ventana1.focus();//se manda focus para que la ventana se convierta en la ventana activa
+		}
+		function abrirVentana2(){
+			ventana2 = window.open("","_blank","width=500,height=400")
+			var html = "";
+			html+="<h1>Mi ventana 2 !</h1>";
+			html+="<p>Contenido HTML reemplazado en la ventana 2 !</p>"
+			ventana2.document.write(html);//EL MÉTODO write sirve la misma funcion que el método focus para tener la ventana activa		
+
+		}
+
+	</script>
+</body>
+</html>
